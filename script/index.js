@@ -25,17 +25,14 @@ function changeMember(memberId) {
   activeMember = nextMember;
   images.style.transform = `translateY(${-100 * activeMember}vh)`;
 
-  changeName(members[activeMember].name);
+  memberName.textContent = members[activeMember].name; 
 
   memberName.classList.remove('janna', 'lulu', 'milio', 'nami', 'seraphine', 'yuumi');
-
   memberName.classList.add(members[activeMember].id);
 
   backButton.disabled = activeMember === 0;
   nextButton.disabled = activeMember === members.length - 1;
 }
-
-backButton.disabled = true;
 
 function navigationMember(direction) {
   const nextMember = activeMember + direction;
@@ -46,6 +43,8 @@ function navigationMember(direction) {
 
   activeMember = nextMember;
   images.style.transform = `translateY(${-100 * activeMember}vh)`;
+
+  changeMember(activeMember); 
 }
 
 function changeMenu() {
@@ -55,5 +54,4 @@ function changeMenu() {
 
 function setMember(memberId) {
   changeMember(memberId);
-  changeMenu(); // Adiciona essa linha para fechar o menu após clicar na imagem
 }
