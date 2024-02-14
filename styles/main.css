@@ -1,0 +1,71 @@
+main {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+}
+
+main div {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+main div button {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid var(--text);
+    transition: opacity 0.4s;
+}
+
+main div button:disabled {
+    opacity: 0.6;
+}
+
+main div button svg path {
+    fill: var(--text);
+}
+
+#member_name {
+    font-size: 150px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    font-family: "Beaufort for LOL Bold";
+    color: transparent;
+    padding-right: 8px;
+}
+
+#member_name.janna {
+    background: var(--janna);
+    -webkit-background-clip: text;
+}
+
+#member_name.lulu {
+    background: var(--lulu);
+    -webkit-background-clip: text;
+}
+
+#member_name.milio {
+    background: var(--milio);
+    -webkit-background-clip: text;
+}
+
+#member_name.nami {
+    background: var(--nami);
+    -webkit-background-clip: text;
+}
+
+#member_name.seraphine {
+    background: var(--seraphine);
+    -webkit-background-clip: text;
+}
+
+#member_name.yuumi {
+    background: var(--yuumi);
+    -webkit-background-clip: text;
+}

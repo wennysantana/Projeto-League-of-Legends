@@ -1,0 +1,39 @@
+#member__name {
+  font-size: 150px;
+  letter-spacing: 6px;
+  font-weight: 400;
+
+  color: transparent;
+  font-family: 'Star Guard Italic';
+  padding-right: 10px;
+}
+
+#member__name.janna {
+  background: var(--janna);
+  -webkit-background-clip: text;
+}
+
+#member__name.lulu {
+  background: var(--lulu);
+  -webkit-background-clip: text;
+}
+
+#member__name.milio {
+  background: var(--milio);
+  -webkit-background-clip: text;
+}
+
+#member__name.nami {
+  background: var(--nami);
+  -webkit-background-clip: text;
+}
+
+#member__name.seraphine {
+  background: var(--seraphine);
+  -webkit-background-clip: text;
+}
+
+#member__name.yuumi {
+  background: var(--yuumi);
+  -webkit-background-clip: text;
+}

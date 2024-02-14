@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>League of Legends</title>
+  <link rel="icon" type="image/x-icon" href="./assets/icon.ico">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link href="https://db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=Beaufort+for+LOL+Bold" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <div id="images">
+      <img src="./assets/members/Janna.png"/>
+      <img src="./assets/members/Lulu.png" loading="lazy"/>
+      <img src="./assets/members/Milio.png" loading="lazy"/>
+      <img src="./assets/members/Nami.png" loading="lazy"/>
+      <img src="./assets/members/Seraphine.png" loading="lazy"/>
+      <img src="./assets/members/Yuumi.png" loading="lazy"/>
+    </div>
+  </div>
+
+  <div class="app">
+    <header>
+      <img src="./assets/logo.png" alt="" width="200" height="130">
+      <button type="button" id="menu" onclick="changeMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="navigation">
+        <strong>Personagens </strong>
+        <div>
+          <button type="button" onclick="setMember(0)">
+            <img src="./assets/members/janna-chibi.png" width="200" height="200"/>
+          </button>
+          <button type="button" onclick="setMember(1)">
+            <img src="./assets/members/lulu-chibi.png" width="200" height="200"/>
+          </button>
+          <button type="button" onclick="setMember(2)">
+            <img src="./assets/members/milio-chibi.png" width="200" height="200"/>
+          </button>
+          <button type="button" onclick="setMember(3)">
+            <img src="./assets/members/nami-chibi.png" width="200" height="200"/>
+          </button>
+          <button type="button" onclick="setMember(4)">
+            <img src="./assets/members/seraphine-chibi.png" width="200" height="200"/>
+          </button>
+          <button type="button" onclick="setMember(5)">
+            <img src="./assets/members/yuumi-chibi.png" width="200" height="200"/>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 id="member_name" class="janna">JANNA</h1>
+      <div>
+        <button type="button" onclick="navigationMember(-1)" id="backButton">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.41z"/></svg>
+        </button>
+        <button type="button" onclick="navigationMember(1)" id="nextButton"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6l-6 6Z"/></svg>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script src="./script/index.js"></script>
+  <script src="./script/changeName.js"></script>
+</body>
+</html>

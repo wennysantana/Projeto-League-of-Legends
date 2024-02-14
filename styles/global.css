@@ -1,0 +1,39 @@
+@import url('./background.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./font.css');
+@import url('./nav.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --text: #EDF1F7;
+
+  --image-shadow: radial-gradient(100% 100% at 50% 1.43%, rgba(22, 21, 21, 0), rgba(22, 21, 21, 0.9) 80%);
+  --janna: linear-gradient(45deg, #87CEFA 25%, #FFFFFF 80%);
+  --lulu: linear-gradient(45deg, #FFB6C1 30%, #C8A2C8 85%);
+  --milio: linear-gradient(45deg, #D97236 10%, #400D0D 70%);
+  --nami: linear-gradient(45deg, #006994, #87CEEB 90%);
+  --seraphine: linear-gradient(45deg, #FF69B4, #9400D3);
+  --yuumi: linear-gradient(45deg, #a464c4 22%, #76daff);
+}
+
+body {
+  overflow: hidden;
+  color: var(--text);
+  font-family: 'Rubik', sans-serif;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 40px 80px 80px;
+}
